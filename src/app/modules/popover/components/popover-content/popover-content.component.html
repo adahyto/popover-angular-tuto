@@ -1,0 +1,12 @@
+<div class="popover">
+  <div class="icon"></div>
+  <div *ngIf="title" class="popover-title">
+    <p>{{ title }}</p>
+  </div>
+  <div class="popover-body">
+    <p>{{ content }}</p>
+  </div>
+  <div *ngIf="link" class="popover-link">
+    <a target="_blank" [href]="link.href">{{ link.text }}</a>
+  </div>
+</div>

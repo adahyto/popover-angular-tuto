@@ -1,0 +1,8 @@
+<app-popover-trigger (click)="togglePopover()"></app-popover-trigger>
+<app-popover-content
+  *ngIf="isPopoverOpen"
+  [ngClass]="position"
+  title="Popover title"
+  content="Popover text"
+  [link]="popoverLink"
+></app-popover-content>
